@@ -9,8 +9,22 @@ void main() {
   // printTable(int.parse(tableValue ?? "-1"));
   // printTable(num);
   // checkEvenNumber();
-  int a = 4;
-  print(a++ + ++a);
+  // int a = 4;
+  // print(a++ + ++a);
+  convertCelsiusToFahrenheit();
+
+
+
+}
+void convertCelsiusToFahrenheit() {
+
+  stdout.write("Please enter celsius:  ");
+  String? celsiusString = stdin.readLineSync();
+  double celsius = double.parse(celsiusString ?? '-1');
+  // Apply the conversion formula: (C × 9/5) + 32
+  double fahrenheit = (celsius * 9 / 5) + 32;
+  
+  print('$celsius°C is equal to $fahrenheit°F');
 
 }
 
